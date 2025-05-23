@@ -53,33 +53,38 @@ Gerenciador de Pacotes: npm
 🏗️ Estrutura do Projeto
 A organização do código reflete a arquitetura modular, com diretórios dedicados a cada componente principal.
 
-.
-├── Project-API/          # Módulo do Back-end (Spring Boot)
-│   ├── src/main/java/br/com/fecaf/
-│   │   ├── autor/        # Lógica de negócio para Autores
-│   │   ├── categoria/    # Lógica de negócio para Categorias
-│   │   ├── emprestimo/   # Lógica de negócio para Empréstimos
-│   │   ├── livro/        # Lógica de negócio para Livros
-│   │   └── usuario/      # Lógica de negócio para Usuários
-│   │       ├── controller/
-│   │       ├── dto/
-│   │       ├── model/
-│   │       ├── repository/
-│   │       └── service/
-│   ├── src/main/resources/ # Arquivos de configuração (application.properties)
-│   │   └── database/       # Scripts SQL (model.sql)
-│   └── pom.xml             # Configuração do Maven
+├── Project-API/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── br/com/fecaf/
+│   │   │   │       ├── autor/
+│   │   │   │       ├── categoria/
+│   │   │   │       ├── emprestimo/
+│   │   │   │       │   ├── controller/
+│   │   │   │       │   ├── dto/
+│   │   │   │       │   ├── model/
+│   │   │   │       │   ├── repository/
+│   │   │   │       │   └── service/
+│   │   │   │       ├── livro/
+│   │   │   │       └── usuario/
+│   │   │   └── resources/
+│   │   │       ├── application.properties
+│   │   │       └── database/
+│   │   │           └── model.sql
+│   ├── pom.xml
+│   └── ... (outros arquivos e pastas do Maven/IDE)
 │
-└── project-frontend/     # Módulo do Front-end (React.js)
+└── project-frontend/
     ├── public/
     ├── src/
     │   ├── components/
     │   ├── pages/
-    │   ├── services/       # Módulo para chamadas à API
+    │   ├── services/
     │   ├── App.jsx
     │   └── index.css
     ├── package.json
-    └── vite.config.js
+    └── ... (outros arquivos de configuração do React/Vite)
 
 ⚙️ Instruções para Execução Local
 Para configurar e executar o projeto em um ambiente local, siga os passos detalhados abaixo.
@@ -145,8 +150,4 @@ npm run dev
 
 O front-end estará disponível em http://localhost:5173 (ou na porta indicada pelo Vite no terminal).
 
-🤝 Contribuição
-Contribuições para este projeto são encorajadas. Sugestões e pull requests são bem-vindos.
-
-📄 Licença
-Este projeto é distribuído sob a licença MIT License.
+Obrigada pela atenção!
